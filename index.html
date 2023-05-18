@@ -19,9 +19,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/acordeon.css">
+    <link rel="stylesheet" href="/assets/css/languages.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/experience.css">
 </head>
 <body>
-    <div class="main">
+    <main class="main">
         <header class="header">
         <img src="" alt="Foto Paulo Ramos" class="photo">
     
@@ -31,20 +34,24 @@
         <div class="information">
             <p class="job">Estudante Desenvolvimento Flexpro Sistemas</p>
             <p class="location">São Miguel do Oeste - SC</p>
-            <p class="phone">(49)9 8884-2611</p>
-            <p class="email">pramosphdr548@gmail.com</p>
+            <p class="phone">
+                <a href="tel:(49)9 8884-2611">(49)9 8884-2611</a>
+            </p>
+            <p class="email">
+                <a href="mailto:pramosphdr548@gmail.com">pramosphdr548@gmail.com</a>
+            </p>
         </div>
         </header>
 
         <section class="acordeon">
-            <button class="trigger">
+            <button class="trigger" type="button">
                 <span class="title">
-                    Idiomas
+                    <h2>Idiomas</h2>
                 </span>
             </button>
-            
+
             <div class="content">
-                <ul>
+                <ul class="languages">
                     <li>Português</li>
                     <li>Inglês</li>
                     <li>Italiano</li>
@@ -52,7 +59,70 @@
                 </ul>
             </div>
         </section>
-    </div>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Portfólio</h2>
+            </button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <h3 class="title github">Site Para Gestão Financeira de Projetos:</h3>
+                        <a href="https://github.com/paulohramoss/costs" target="_blank">https://github.com/paulohramoss/costs</a>
+                    </li>
+                    <li>
+                        <h3 class="title github">Site Cópia da Plataforma Dio.me:</h>
+                        <a href="https://github.com/paulohramoss/dio-clone">https://github.com/paulohramoss/dio-clone</a>
+                    </li>
+                    <li>
+                        <h3 class="title github">Contador Para o Final do Ano:</h3>
+                        <a href="https://github.com/paulohramoss/countdown">https://github.com/paulohramoss/countdown</a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="acordeon open">
+            <button class="trigger" type="button">
+                <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="title">Estoquista:</h3>
+                        <p class="period">Mar 2017 - Fev 2020</p>
+                        <p>
+                            Lorem ipsum ultricies enim semper per, lorem quam varius aenean.
+                            Quis vitae quam feugiat cursus arcu, porttitor enim consectetur et.
+                            Consequat dui nibh aptent ut tortor, scelerisque morbi quam sed.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="title">Suporte Técnico:</h3>
+                        <p class="period">Mar 2020 - Abr 2023</p>
+                        <p>
+                            Lorem ipsum ultricies enim semper per, lorem quam varius aenean.
+                            Quis vitae quam feugiat cursus arcu, porttitor enim consectetur et.
+                            Consequat dui nibh aptent ut tortor, scelerisque morbi quam sed.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="title">Desenvolvedor Estudante:</h3>
+                        <p class="period">Abr 2023 - Current</p>
+                        <p>
+                            Lorem ipsum ultricies enim semper per, lorem quam varius aenean.
+                            Quis vitae quam feugiat cursus arcu, porttitor enim consectetur et.
+                            Consequat dui nibh aptent ut tortor, scelerisque morbi quam sed.
+                        </p>
+                    </li>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/acordeon.js"></script>
 </body>
 
 </html>
